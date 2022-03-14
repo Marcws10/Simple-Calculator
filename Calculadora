@@ -1,0 +1,44 @@
+#Faça uma calculadora que execute as 4 funçoes.
+#operação da escolha>
+print(''' Escolha os sinais das operações
+[+] - Soma
+[-] - Subtrair
+[*] - Multiplicar
+[/] - Dividir
+''')
+
+while True:
+    escolha = input("Escolha a operação: ")
+    if escolha == '+':
+        numb1= int(input("Escolha o numero para somar: "))
+        numb2 = int(input("Escolha o segundo numero: "))
+        n1 = (numb1 + numb2)
+        print("{} + {} = ".format(numb1,numb2))
+        print("Seu resultado é: ", n1)   
+    
+    if escolha == '-':
+        var1 = int(input("Escolha um numero para subtrair: "))
+        var2 = int(input("Escolha o segundo numero para subtrair: "))
+        numb = (var1 - var2)
+        print("{} - {} = ".format(var1, var2))
+        print("Seu resultado é: ", numb)    
+    
+    if escolha == '*':
+        nub1 = int(input("Escolha um numero para multiplicar: "))
+        nub2 = int(input("Escolha um numero para multiplicar: "))
+        num_1 = (nub1 * nub2)
+        print("{} * {} = ".format(nub1, nub2))
+        print("Seu resultado é: ", num_1)
+    
+    if escolha == '/':
+            numb_1 = int(input("Escolha o numero para dividir: "))
+            numb_2 = int(input("Escolha o segundo numero para dividir: "))
+            rest = (numb_1 / numb_2)
+            print("{} / {} = ".format(numb_1, numb_2))
+            print("Seu resultado é: ", rest)
+    test = input("Deseja usar novamente,  s = Sim N = Não ")
+    if test == 's':
+        print(escolha)
+    else:
+        exit () 
+        
